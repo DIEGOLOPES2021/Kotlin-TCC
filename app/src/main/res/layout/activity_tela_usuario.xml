@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TelaUsuario"
+    android:background="@color/secundaria"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="480dp"
+        app:cardCornerRadius="25dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15sp"
+            android:text="Cadastrece"
+            android:textColor="@color/black"
+            android:textSize="37sp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/black">
+
+            <EditText
+                android:id="@+id/ed_nome"
+                android:layout_width="330dp"
+                android:layout_height="50dp"
+
+                android:background="@drawable/edit_text_login"
+                android:drawablePadding="16dp"
+                android:hapticFeedbackEnabled="true"
+                android:hint="Nome"
+
+
+                android:inputType="textEmailAddress"
+                android:padding="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.55"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.195" />
+
+            <EditText
+                android:id="@+id/ed_telefone"
+                android:layout_width="330dp"
+                android:layout_height="50dp"
+
+                android:layout_marginBottom="260dp"
+                android:background="@drawable/edit_text_login"
+                android:drawablePadding="16dp"
+                android:hapticFeedbackEnabled="true"
+
+
+                android:hint="Telefone"
+                android:inputType="textEmailAddress"
+                android:padding="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/ed_nome"
+                app:layout_constraintStart_toStartOf="@+id/ed_nome"
+                app:layout_constraintTop_toBottomOf="@+id/ed_nome" />
+
+            <EditText
+                android:id="@+id/ed_data_nascimento"
+                android:layout_width="330dp"
+                android:layout_height="50dp"
+
+                android:layout_marginBottom="188dp"
+                android:background="@drawable/edit_text_login"
+
+                android:drawablePadding="16dp"
+                android:hapticFeedbackEnabled="true"
+
+
+                android:hint="Data de Nascimento"
+                android:inputType="textEmailAddress"
+                android:padding="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/ed_telefone"
+                app:layout_constraintStart_toStartOf="@+id/ed_telefone"
+                app:layout_constraintTop_toBottomOf="@+id/ed_telefone" />
+
+            <EditText
+                android:id="@+id/ed_cpf"
+                android:layout_width="330dp"
+                android:layout_height="50dp"
+
+                android:layout_marginBottom="112dp"
+                android:background="@drawable/edit_text_login"
+
+                android:drawablePadding="16dp"
+                android:hapticFeedbackEnabled="true"
+
+
+                android:hint="CPF"
+                android:inputType="textEmailAddress"
+                android:padding="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/ed_data_nascimento"
+                app:layout_constraintStart_toStartOf="@+id/ed_data_nascimento"
+                app:layout_constraintTop_toBottomOf="@+id/ed_data_nascimento"
+                app:layout_constraintVertical_bias="0.391" />
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+
+
+                android:padding="16dp"
+                android:text="Entrar"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                app:backgroundTint="@color/primary"
+                app:cornerRadius="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/ed_cpf"
+                app:layout_constraintHorizontal_bias="0.6"
+                app:layout_constraintStart_toStartOf="@+id/ed_cpf"
+                app:layout_constraintTop_toBottomOf="@+id/ed_cpf"
+                app:layout_constraintVertical_bias="0.3" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
